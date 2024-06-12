@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="m-4">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="container_css">
+            <h1>Registro</h1>
+            <form id="formulario">
+              <div class="form-group">
+                <label for="inputCodigo">Código:</label>
+                <input type="text" class="form-control" id="inputCodigo" name="inputCodigo" placeholder="Ingrese un codigo">
+                <div class="invalid-feedback">
+                  Debe ingresar un codigo valido alfanumerico y con al menos 2 caracteres.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputNombre">Nombre:</label>
+                <input type="text" class="form-control" id="inputNombre" name="inputNombre" placeholder="Ingrese su nombre">
+                <div class="invalid-feedback">
+                  Debe ingresar un nombre valido.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputNota1">Nota 1:</label>
+                <input type="text" class="form-control" id="inputNota1" name="inputNota1" placeholder="Ingrese la nota 1">
+                <div class="invalid-feedback">
+                  Debe ingresar la nota entre 0 a 20.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputNota2">Nota 2:</label>
+                <input type="text" class="form-control" id="inputNota2" name="inputNota2" placeholder="Ingrese la nota 2">
+                <div class="invalid-feedback">
+                  Debe ingresar la nota entre 0 a 20.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputNota3">Nota 3:</label>
+                <input type="text" class="form-control" id="inputNota3" name="inputNota3" placeholder="Ingrese la nota 3">
+                <div class="invalid-feedback">
+                  Debe ingresar la nota entre 0 a 20.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputNota4">Nota 4:</label>
+                <input type="text" class="form-control" id="inputNota4" name="inputNota4" placeholder="Ingrese la nota 4">
+                <div class="invalid-feedback">
+                  Debe ingresar la nota entre 0 a 20.
+                </div>
+              </div>
+      
+              <button id="botonEnviar" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div id="mensaje-mochila">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/alumno.js"></script>
+    <script src="/js/formulario_validacion.js"></script>
+
+  </body>
+</html>
